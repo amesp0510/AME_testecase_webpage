@@ -1,17 +1,17 @@
-<testsuite name="TC1_02_login_branco.Test case Login em Branco- Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="37.287463" timestamp="2020-06-24T13:22:00.976154" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_02_login_branco.Test case Login em Branco- Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="37.287463"><system-out>
+<testsuite name="TC1_02_login_branco.Test case Login em Branco- Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="34.221132" timestamp="2020-06-24T20:36:46.075656" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_02_login_branco.Test case Login em Branco- Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="34.221132"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verifica se ja possui conta criada no site atraves do e-mail e senha
-    Given Acessa a pagina principal pelo navegador ... passed in 19.058s
-    When Verifica se a pagina esta correta ... passed in 1.026s
-    Then Clica sobre o botao Sign In ... passed in 5.521s
-    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.067s
-    Then Digita seu e-mail " " de acesso ... passed in 4.026s
-    Then Cilca sobre o campo de senha ... passed in 1.064s
-    Then Digita a senha no campo indicado " " ... passed in 1.051s
-    Then Clica no Botao Sign IN ... passed in 2.379s
-    Then Verifica se mensagem de erro foi exibida ... passed in 0.047s
-    And Fecha navegador e gera relatorio ... passed in 2.048s
+    Given Acessa a pagina principal pelo navegador ... passed in 17.221s
+    When Verifica se a pagina esta correta ... passed in 1.009s
+    Then Clica sobre o botao Sign In ... passed in 3.997s
+    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.097s
+    Then Digita seu e-mail " " de acesso ... passed in 4.078s
+    Then Cilca sobre o campo de senha ... passed in 1.079s
+    Then Digita a senha no campo indicado " " ... passed in 1.080s
+    Then Clica no Botao Sign IN ... passed in 2.541s
+    Then Verifica se mensagem de erro foi exibida ... passed in 0.064s
+    And Fecha navegador e gera relatorio ... passed in 2.056s
 
 @scenario.end
 --------------------------------------------------------------------------------
