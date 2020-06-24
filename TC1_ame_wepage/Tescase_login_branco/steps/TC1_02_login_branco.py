@@ -13,7 +13,7 @@ def webpageone(context):
     # My Chromedriver located in Environment windows by default.
     chrome_options = Options()
     # para teste com navegador aberto, comente a linha abaixo
-    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     context.driver = webdriver.Chrome(options=chrome_options)
     context.driver.maximize_window()
     context.driver.implicitly_wait(5)
@@ -66,17 +66,11 @@ def botao_signin_green(context):
     time.sleep(1)
 
 
-@then('Verifica se esta dentro a pagina da conta e verifica icone my account')
-def iconeacoount(context):
-    icon_account = context.driver.find_element_by_xpath("//span[@class='navigation_page']").text
-    time.sleep(2)
-    assert "My account" in icon_account
-
-
-@then('Clica no botao de logout para ver se estava logado')
-def clicklogout(context):
-    context.driver.find_element_by_xpath("//a[@class='logout']").click()
-    time.sleep(2)
+@then('Verifica se mensagem de erro foi exibida')
+def mensagemembranco(context):
+    message_email_blank = context.driver.find_element_by_xpath(
+        "//li[contains(text(),'An email address required.')]").text
+    assert "An email" in message_email_blank
 
 
 @then('Fecha navegador e gera relatorio')

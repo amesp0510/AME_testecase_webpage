@@ -7,10 +7,9 @@ Feature: Test case Login em Branco- Usuario fara uma tentativa de Sign In para
     When Verifica se a pagina esta correta
     Then Clica sobre o botao Sign In
     Then Clica sobre o campo de email de conta cadastrada
-    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso
+    Then Digita seu e-mail " " de acesso
     Then Cilca sobre o campo de senha
-    Then Digita a senha no campo indicado "123mudar"
+    Then Digita a senha no campo indicado " "
     Then Clica no Botao Sign IN
-    Then Verifica se esta dentro a pagina da conta e verifica icone my account
-    Then Clica no botao de logout para ver se estava logado
+    Then Verifica se mensagem de erro foi exibida
     And Fecha navegador e gera relatorio

@@ -1,18 +1,17 @@
-<testsuite name="TC1_02_login_branco.Test case - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="51.203728" timestamp="2020-06-24T11:14:39.409086" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_02_login_branco.Test case - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="51.203728"><system-out>
+<testsuite name="TC1_02_login_branco.Test case Login em Branco- Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="34.253786" timestamp="2020-06-24T12:57:42.085720" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_02_login_branco.Test case Login em Branco- Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="34.253786"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verifica se ja possui conta criada no site atraves do e-mail e senha
-    Given Acessa a pagina principal pelo navegador ... passed in 22.671s
-    When Verifica se a pagina esta correta ... passed in 1.017s
-    Then Clica sobre o botao Sign In ... passed in 7.841s
-    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.087s
-    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.079s
-    Then Cilca sobre o campo de senha ... passed in 1.064s
-    Then Digita a senha no campo indicado "123mudar" ... passed in 1.061s
-    Then Clica no Botao Sign IN ... passed in 3.111s
-    Then Verifica se esta dentro a pagina da conta e verifica icone my account ... passed in 2.036s
-    Then Clica no botao de logout para ver se estava logado ... passed in 5.166s
-    And Fecha navegador e gera relatorio ... passed in 2.071s
+    Given Acessa a pagina principal pelo navegador ... passed in 17.305s
+    When Verifica se a pagina esta correta ... passed in 1.018s
+    Then Clica sobre o botao Sign In ... passed in 4.187s
+    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.112s
+    Then Digita seu e-mail " " de acesso ... passed in 4.086s
+    Then Cilca sobre o campo de senha ... passed in 1.052s
+    Then Digita a senha no campo indicado " " ... passed in 1.078s
+    Then Clica no Botao Sign IN ... passed in 2.346s
+    Then Verifica se mensagem de erro foi exibida ... passed in 0.037s
+    And Fecha navegador e gera relatorio ... passed in 2.033s
 
 @scenario.end
 --------------------------------------------------------------------------------

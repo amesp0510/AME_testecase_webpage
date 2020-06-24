@@ -13,7 +13,7 @@ def webpageone(context):
     # My Chromedriver located in Environment windows by default.
     chrome_options = Options()
     # para teste com navegador aberto, comente a linha abaixo
-    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     context.driver = webdriver.Chrome(options=chrome_options)
     context.driver.maximize_window()
     context.driver.implicitly_wait(5)
