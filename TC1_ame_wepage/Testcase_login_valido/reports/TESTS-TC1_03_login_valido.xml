@@ -1,18 +1,18 @@
-<testsuite name="TC1_03_login_valido.Test case Login Valido - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="47.102652" timestamp="2020-06-24T12:56:47.838278" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_03_login_valido.Test case Login Valido - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="47.102652"><system-out>
+<testsuite name="TC1_03_login_valido.Test case Login Valido - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="43.658187" timestamp="2020-06-24T13:04:24.227684" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_03_login_valido.Test case Login Valido - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="43.658187"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verifica se ja possui conta criada no site atraves do e-mail e senha
-    Given Acessa a pagina principal pelo navegador ... passed in 23.312s
-    When Verifica se a pagina esta correta ... passed in 1.030s
-    Then Clica sobre o botao Sign In ... passed in 3.646s
-    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.085s
-    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.128s
-    Then Cilca sobre o campo de senha ... passed in 1.084s
-    Then Digita a senha no campo indicado "123mudar" ... passed in 1.071s
-    Then Clica no Botao Sign IN ... passed in 3.117s
-    Then Verifica se esta dentro a pagina da conta e verifica icone my account ... passed in 2.065s
-    Then Clica no botao de logout para ver se estava logado ... passed in 4.544s
-    And Fecha navegador e gera relatorio ... passed in 2.021s
+    Given Acessa a pagina principal pelo navegador ... passed in 17.052s
+    When Verifica se a pagina esta correta ... passed in 1.020s
+    Then Clica sobre o botao Sign In ... passed in 3.780s
+    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.080s
+    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.153s
+    Then Cilca sobre o campo de senha ... passed in 1.140s
+    Then Digita a senha no campo indicado "123mudar" ... passed in 1.096s
+    Then Clica no Botao Sign IN ... passed in 5.087s
+    Then Verifica se esta dentro a pagina da conta e verifica icone my account ... passed in 2.052s
+    Then Clica no botao de logout para ver se estava logado ... passed in 5.143s
+    And Fecha navegador e gera relatorio ... passed in 2.056s
 
 @scenario.end
 --------------------------------------------------------------------------------
