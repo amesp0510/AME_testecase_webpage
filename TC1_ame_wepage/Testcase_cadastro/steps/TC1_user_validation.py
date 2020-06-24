@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 import os
 
 @given('Acessa a pagina principal pelo navegador')
-def step_impl(context):
+def openweb(context):
     # here you can add your path for Chromedriver in case you have your path
     # context.driver = webdriver.Chrome(executable_path="C:\chromedriver.exe")
     # My Chromedriver located in Environment windows by default.
@@ -22,7 +22,7 @@ def step_impl(context):
 
 
 @when('Verifica se a pagina esta correta')
-def step_impl(context):
+def pageurlcheck(context):
     # verifica se esta dentro da pagina correta de teste
     check_page = context.driver.current_url
     assert "http://automationpractice.com/index.php" in check_page
@@ -30,31 +30,31 @@ def step_impl(context):
 
 
 @then('Clica sobre o botao Sign In')
-def step_impl(context):
+def botaosign(context):
     context.driver.find_element_by_xpath("//a[@class='login']").click()
     time.sleep(1)
 
 
 @then('Clica sobre o campo de email')
-def step_impl(context):
+def emailcheck(context):
     context.driver.find_element_by_xpath("//body[@id='authentication']").click()
     time.sleep(2)
 
 
 @then('Digita seu e-mail "{email}" de acesso')
-def step_impl(context, email):
+def emailtext(context, email):
     context.driver.find_element_by_xpath("//input[@id='email_create']").send_keys(email)
     time.sleep(4)
 
 
 @then('Clica no botao Create an account')
-def step_impl(context):
+def botaocreated(context):
     context.driver.find_element_by_xpath("//form[@id='create-account_form']//span[1]").click()
     time.sleep(3)
 
 
 @then('Verifca se a mensagem de alerta de conta existente e gerado')
-def step_impl(context):
+def messagecheck(context):
     time.sleep(5)
     # This is a message that can print in the console --but need to use  {behave --no-capture TC1_user.feature} in
     # the command line print(context.driver.find_element_by_xpath("//li[contains(text(),'An account using this email
@@ -64,6 +64,6 @@ def step_impl(context):
 
 
 @then('Fecha navegador e gera relatorio')
-def step_impl(context):
+def closebrowser(context):
     time.sleep(2)
     context.driver.close()

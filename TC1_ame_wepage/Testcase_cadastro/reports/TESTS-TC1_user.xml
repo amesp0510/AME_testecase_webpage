@@ -1,15 +1,15 @@
-<testsuite name="TC1_user.Test case - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="37.619096" timestamp="2020-06-24T10:16:18.179446" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_user.Test case - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail" status="passed" time="37.619096"><system-out>
+<testsuite name="TC1_user.Test case - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="41.351274" timestamp="2020-06-24T10:45:48.441952" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_user.Test case - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail" status="passed" time="41.351274"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verifica se ja possui conta criada no site atraves do e-mail
-    Given Acessa a pagina principal pelo navegador ... passed in 16.492s
-    When Verifica se a pagina esta correta ... passed in 1.024s
-    Then Clica sobre o botao Sign In ... passed in 3.720s
-    Then Clica sobre o campo de email ... passed in 2.041s
-    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.121s
-    Then Clica no botao Create an account ... passed in 3.118s
-    Then Verifca se a mensagem de alerta de conta existente e gerado ... passed in 5.061s
-    And Fecha navegador e gera relatorio ... passed in 2.043s
+    Given Acessa a pagina principal pelo navegador ... passed in 19.995s
+    When Verifica se a pagina esta correta ... passed in 1.015s
+    Then Clica sobre o botao Sign In ... passed in 4.050s
+    Then Clica sobre o campo de email ... passed in 2.043s
+    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.091s
+    Then Clica no botao Create an account ... passed in 3.070s
+    Then Verifca se a mensagem de alerta de conta existente e gerado ... passed in 5.031s
+    And Fecha navegador e gera relatorio ... passed in 2.056s
 
 @scenario.end
 --------------------------------------------------------------------------------

@@ -7,50 +7,79 @@ import os
 
 
 @given('Acessa a pagina principal pelo navegador')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Given Acessa a pagina principal pelo navegador')
+def webpageone(context):
+    # here you can add your path for Chromedriver in case you have your path
+    # context.driver = webdriver.Chrome(executable_path="C:\chromedriver.exe")
+    # My Chromedriver located in Environment windows by default.
+    chrome_options = Options()
+    # para teste com navegador aberto, comente a linha abaixo
+    # chrome_options.add_argument("--headless")
+    context.driver = webdriver.Chrome(options=chrome_options)
+    context.driver.maximize_window()
+    context.driver.implicitly_wait(5)
+    context.driver.get("http://automationpractice.com/index.php")
+    time.sleep(2)
+    print(".......................................................")
 
 
-@when(Verifica se a pagina esta correta')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: When Verifica se a pagina esta correta')
+@when('Verifica se a pagina esta correta')
+def webapgecheck(context):
+    # verifica se esta dentro da pagina correta de teste
+    check_page = context.driver.current_url
+    assert "http://automationpractice.com/index.php" in check_page
+    time.sleep(1)
 
 
 @then('Clica sobre o botao Sign In')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Clica sobre o botao Sign In')
+def botaosign(context):
+    context.driver.find_element_by_xpath("//a[@class='login']").click()
+    time.sleep(1)
 
 
 @then('Clica sobre o campo de email de conta cadastrada')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Clica sobre o campo de email de conta cadastrada')
+def emailconta(context):
+    context.driver.find_element_by_xpath("//input[@id='email']").click()
+    time.sleep(1)
 
 
-@then('Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso')
+@then('Digita seu e-mail "{email}" de acesso')
+def emailtex(context, email):
+    context.driver.find_element_by_xpath("//input[@id='email']").send_keys(email)
+    time.sleep(4)
 
 
 @then('Cilca sobre o campo de senha')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Cilca sobre o campo de senha')
+def senhafield(context):
+    context.driver.find_element_by_xpath("//input[@id='passwd']").click()
+    time.sleep(1)
 
 
-@then('Digita a senha no campo indicado "123mudar"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Digita a senha no campo indicado "123mudar"')
+@then('Digita a senha no campo indicado "{password}"')
+def digitaconta(context, password):
+    context.driver.find_element_by_xpath("//input[@id='passwd']").send_keys(password)
+    time.sleep(1)
+
+
+@then('Clica no Botao Sign IN')
+def botao_signin_green(context):
+    context.driver.find_element_by_xpath("//p[@class='submit']//span[1]").click()
+    time.sleep(1)
 
 
 @then('Verifica se esta dentro a pagina da conta e verifica icone my account')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Verifica se esta dentro a pagina da conta e verifica icone my account')
+def iconeacoount(context):
+    icon_account = context.driver.find_element_by_xpath("//span[@class='navigation_page']").text
+    time.sleep(2)
+    assert "My account" in icon_account
 
 
 @then('Clica no botao de logout para ver se estava logado')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Clica no botao de logout para ver se estava logado')
+def clicklogout(context):
+    context.driver.find_element_by_xpath("//a[@class='logout']").click()
+    time.sleep(2)
 
 
 @then('Fecha navegador e gera relatorio')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Fecha navegador e gera relatorio')
+def closebrowser(context):
+    time.sleep(2)
+    context.driver.close()

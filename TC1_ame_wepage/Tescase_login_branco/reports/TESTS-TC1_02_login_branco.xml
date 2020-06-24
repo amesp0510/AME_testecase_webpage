@@ -1,0 +1,24 @@
+<testsuite name="TC1_02_login_branco.Test case - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="50.77631" timestamp="2020-06-24T11:09:36.144131" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_02_login_branco.Test case - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="50.77631"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Verifica se ja possui conta criada no site atraves do e-mail e senha
+    Given Acessa a pagina principal pelo navegador ... passed in 25.934s
+    When Verifica se a pagina esta correta ... passed in 1.006s
+    Then Clica sobre o botao Sign In ... passed in 4.225s
+    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.056s
+    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.078s
+    Then Cilca sobre o campo de senha ... passed in 1.078s
+    Then Digita a senha no campo indicado "123mudar" ... passed in 1.095s
+    Then Clica no Botao Sign IN ... passed in 2.813s
+    Then Verifica se esta dentro a pagina da conta e verifica icone my account ... passed in 2.040s
+    Then Clica no botao de logout para ver se estava logado ... passed in 5.355s
+    And Fecha navegador e gera relatorio ... passed in 2.095s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+.......................................................
+
+]]>
+</system-out></testcase></testsuite>

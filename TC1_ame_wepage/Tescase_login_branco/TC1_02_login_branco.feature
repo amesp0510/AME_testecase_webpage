@@ -10,6 +10,7 @@ Feature: Test case - Usuario fara uma tentativa de Sign In para
     Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso
     Then Cilca sobre o campo de senha
     Then Digita a senha no campo indicado "123mudar"
+    Then Clica no Botao Sign IN
     Then Verifica se esta dentro a pagina da conta e verifica icone my account
     Then Clica no botao de logout para ver se estava logado
     And Fecha navegador e gera relatorio
