@@ -1,0 +1,23 @@
+<testsuite name="TC1_04_login_inva.Test case Login em Invalido- Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="37.834108" timestamp="2020-06-24T13:21:55.323950" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_04_login_inva.Test case Login em Invalido- Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail e senha" status="passed" time="37.834108"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Verifica se ja possui conta criada no site atraves do e-mail e senha
+    Given Acessa a pagina principal pelo navegador ... passed in 21.275s
+    When Verifica se a pagina esta correta ... passed in 1.014s
+    Then Clica sobre o botao Sign In ... passed in 4.051s
+    Then Clica sobre o campo de email de conta cadastrada ... passed in 1.048s
+    Then Digita seu e-mail "meunomeehojuara@cabra" de acesso ... passed in 4.065s
+    Then Cilca sobre o campo de senha ... passed in 1.056s
+    Then Digita a senha no campo indicado "11333444" ... passed in 1.048s
+    Then Clica no Botao Sign IN ... passed in 2.239s
+    Then Verifica se mensagem de erro foi exibida ... passed in 0.020s
+    And Fecha navegador e gera relatorio ... passed in 2.019s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+.......................................................
+
+]]>
+</system-out></testcase></testsuite>
