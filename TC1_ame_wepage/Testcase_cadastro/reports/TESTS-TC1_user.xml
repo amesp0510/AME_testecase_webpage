@@ -1,0 +1,21 @@
+<testsuite name="TC1_user.Test case - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="43.952431" timestamp="2020-06-24T10:08:05.603331" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_user.Test case - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail" status="passed" time="43.952431"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Verifica se ja possui conta criada no site atraves do e-mail
+    Given Acessa a pagina principal pelo navegador ... passed in 22.715s
+    When Verifica se a pagina esta correta ... passed in 1.021s
+    Then Clica sobre o botao Sign In ... passed in 3.896s
+    Then Clica sobre o campo de email ... passed in 2.042s
+    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.122s
+    Then Clica no botao Create an account ... passed in 3.069s
+    Then Verifca se a mensagem de alerta de conta existente e gerado ... passed in 5.035s
+    And Fecha navegador e gera relatorio ... passed in 2.054s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+.......................................................
+
+]]>
+</system-out></testcase></testsuite>
