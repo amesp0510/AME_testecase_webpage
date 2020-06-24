@@ -1,4 +1,4 @@
-Feature: Test case - Usuario fara uma tentativa de Sign In para
+Feature: Test case Cadastro  - Usuario fara uma tentativa de Sign In para
     acessar a conta e em seguida digita seu email e pressiona
     botao para create account e espera uma mensagem de alerta para conta ja criada.
 

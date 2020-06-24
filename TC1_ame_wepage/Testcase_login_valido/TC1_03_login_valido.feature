@@ -1,4 +1,4 @@
-Feature: Test case Login em Branco- Usuario fara uma tentativa de Sign In para
+Feature: Test case Login Valido - Usuario fara uma tentativa de Sign In para
       acessar a conta em seguida deve preencher os campos de usuario
       cadastrado com email e senha e verifica se login foi bem sucedido
 
