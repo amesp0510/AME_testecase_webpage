@@ -1,15 +1,15 @@
-<testsuite name="TC1_user.Test case Cadastro  - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="39.716731" timestamp="2020-06-24T20:35:59.370350" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_user.Test case Cadastro  - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail" status="passed" time="39.716731"><system-out>
+<testsuite name="TC1_user.Test case Cadastro  - Usuario fara uma tentativa de Sign In para" tests="1" errors="0" failures="0" skipped="0" time="40.206323" timestamp="2020-06-26T09:16:07.933763" hostname="DESKTOP-CG4A4IA"><testcase classname="TC1_user.Test case Cadastro  - Usuario fara uma tentativa de Sign In para" name="Verifica se ja possui conta criada no site atraves do e-mail" status="passed" time="40.206323"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verifica se ja possui conta criada no site atraves do e-mail
-    Given Acessa a pagina principal pelo navegador ... passed in 18.172s
-    When Verifica se a pagina esta correta ... passed in 1.006s
-    Then Clica sobre o botao Sign In ... passed in 4.108s
-    Then Clica sobre o campo de email ... passed in 2.098s
-    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.133s
-    Then Clica no botao Create an account ... passed in 3.058s
-    Then Verifca se a mensagem de alerta de conta existente e gerado ... passed in 5.065s
-    And Fecha navegador e gera relatorio ... passed in 2.075s
+    Given Acessa a pagina principal pelo navegador ... passed in 19.343s
+    When Verifica se a pagina esta correta ... passed in 1.019s
+    Then Clica sobre o botao Sign In ... passed in 3.544s
+    Then Clica sobre o campo de email ... passed in 2.074s
+    Then Digita seu e-mail "vinicius.mpinho@gmail.com" de acesso ... passed in 4.093s
+    Then Clica no botao Create an account ... passed in 3.068s
+    Then Verifca se a mensagem de alerta de conta existente e gerado ... passed in 5.034s
+    And Fecha navegador e gera relatorio ... passed in 2.029s
 
 @scenario.end
 --------------------------------------------------------------------------------
